@@ -1,0 +1,45 @@
+body {
+	padding-top:40px;
+	width: 70%;
+    height: 90%;
+    margin: 0 auto;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#userInfo {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-bottom:30px;
+}
+#userInfo img {
+	height: 120px;
+ 	width: auto;
+ }
+ #userInfo p {
+	font-size: 17px;
+ }
+
+.submit-btn {
+	background-color: #b1dbff;
+	margin: 10px 0 10px 0;
+}
+
+.post {
+	padding: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+.post .profilePic {
+
+	display: block;
+	float: left;
+	padding-right: 10px;
+}
+
+.odd {
+	background-color: #E0EEEE;
+	
+}
+.even {
+	background-color: #F0F8FF;
+}

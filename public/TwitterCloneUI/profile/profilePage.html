@@ -1,0 +1,21 @@
+
+<div id="userInfo">
+			 <img ng-src={{vm.currentUser.profilePic}} /> 
+			 <p>Tweets: {{vm.userTweets.length}} </p>
+</div>
+<div class="clearfix">
+  <form name="vm.tweetForm" ng-Submit="vm.addTweet()">
+    <textarea required class="form-control" maxlength="200" rows="3" placeholder="Say something" ng-model="vm.text" ng-keyup="$event.keyCode == 13 && vm.addTweet()"></textarea>
+    <input class="btn submit-btn pull-right" type="submit" value="Tweet!" />
+  </form>
+</div>
+<div id="post-stream">
+	<h4>Personal Feed</h4>
+		<div class="post" ng-repeat="tweet in vm.userTweets | orderBy: '-createdOn'" ng-class-odd="'odd'" ng-class-even="'even'"> 
+		<small> <img class="profilePic" ng-src={{vm.currentUser.profilePic}} /> </small>
+			<p>{{tweet.text}}</p>
+			<small>Posted by @{{vm.currentUser.username}}</small>
+			<small class="pull-right">{{tweet.createdOn | date:"dd.MM.yyyy @ HH:mm"}}</small>
+		
+		</div>
+</div>

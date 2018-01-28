@@ -1,0 +1,32 @@
+{
+  "name": "twitterclone",
+  "version": "1.0.0",
+  "description": "Twitter clone application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "twitterclone": "npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinamer/twitterClone.git"
+  },
+  "keywords": [
+    "twitter",
+    "clone",
+    "mean"
+  ],
+  "homepage": "https://github.com/dinamer/twitterClone.git",
+  "author": "Edina M.",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongo": "^0.1.0",
+    "mongose": "0.0.2-security",
+    "nodemon": "^1.14.11"
+  }
+}
